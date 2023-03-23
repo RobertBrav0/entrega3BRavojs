@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gran fiesta</title>
+    <link rel="stylesheet" href="main.css">
+	
+</head>
+<body>
+	<h1>Bienvenido a la Gran Fiesta</h1>
+	<p>Por favor, ingresa tu nombre:</p>
+	<button onclick="procesarDatos()">Ingresar nombre</button>
+	
+	<p>¿Cuántos años tienes?</p>
+	<input type="text" id="edad">
+	<button onclick="verificarEdad()">Verificar edad</button>
+	<div id="mensaje-edad"></div>
+	<label for="invitados">Número de invitados:</label>
+    <input type="number" id="invitados"><br>
+    <button onclick="calcularBebidas()">Calcular bebidas</button><br><br>
+    <div id="resultado"></div>
+    <div>
+        <button onclick="agregarInvitados()">Agregar invitados</button> 
+    </div>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono"><br><br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea><br><br>
+        <button type="submit" onclick="guardarDatos(event)">Enviar</button>
+      </form>
+      <p>Selecciona la cantidad de entradas que deseas comprar:</p>
+      <input type="number" id="entradas" value="1">
+      <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+      <button onclick="finalizarCompra()">Finalizar compra</button>
+      
+    <script src="main.js"></script>
+</body>
+</html>
